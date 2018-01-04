@@ -123,6 +123,12 @@ end
 "       \ '^\s*-\w*'
 " \ ]
 
+"Find and Replace settings
+"=================================
+let g:far#source = 'agnvim'
+
+
+
 "Deoplete TernJS
 "=================================
 "Add extra filetypes
