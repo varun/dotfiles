@@ -1,0 +1,8 @@
+node_modules
+.git
+.svn
+.hg
+.DS_Store
+**/*.pyc
+target
+__pycache__
