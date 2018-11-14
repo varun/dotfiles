@@ -1,0 +1,126 @@
+"Escape
+"======
+inoremap jk <Esc>
+vnoremap jk <Esc>
+
+" leader
+"=======
+let mapleader = " "
+
+"Search settings
+"===============
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+set showmatch
+nnoremap <leader><CR> :nohlsearch<CR>
+
+" Enable surround behaviour
+"==========================
+set surround
+
+" Set Number and relative number
+"===============================
+set number
+set relativenumber
+
+" Use system clipboard
+"=====================
+set clipboard^=unnamed,unnamedplus
+
+" Scroll
+"=======
+set scrolloff=5
+
+" Window Navigation
+"==================
+nnoremap <leader>wl <ESC><C-w>l
+nnoremap <leader>wj <ESC><C-w>j
+nnoremap <leader>wk <ESC><C-w>k
+nnoremap <leader>wh <ESC><C-w>h
+
+" Code
+"=====
+nnoremap <C-i> <ESC>:action Back<CR>
+nnoremap <C-o> <ESC>:action Forward<CR>
+
+nnoremap <leader>` <ESC>:action SelectInProjectView<CR>
+
+nnoremap <leader>su <ESC>:action ShowUsages<CR>
+nnoremap <leader>sm <ESC>:action Vcs.QuickListPopupAction<CR>
+nnoremap <leader>sp <ESC>:action ParameterInfo<CR>
+
+nnoremap <leader>pl <ESC>:action ManageRecentProjects<CR>
+
+nnoremap <leader>fs <ESC>:action FileStructurePopup<CR>
+nnoremap <leader>fu <ESC>:action HighlightUsagesInFile<CR>
+
+nnoremap <leader>gm <ESC>:action Generate<CR>
+"nnoremap <leader>go <ESC>:action OverrideMethods<CR>
+"nnoremap <leader>gc <ESC>:action GenerateConstructor<CR>
+"nnoremap <leader>gg <ESC>:action GenerateGetter<CR>
+"nnoremap <leader>gs <ESC>:action GenerateSetter<CR>
+"nnoremap <leader>ga <ESC>:action GenerateGetterAndSetter<CR>
+"nnoremap <leader>ge <ESC>:action GenerateEquals<CR>
+"nnoremap <leader>gt <ESC>:action GenerateTestMethod<CR>
+
+nnoremap <leader>hc <ESC>:action CallHierarchy<CR>
+nnoremap <leader>ht <ESC>:action TypeHierarchy<CR>
+nnoremap <leader>hm <ESC>:action MethodHierarchy<CR>
+
+nnoremap <leader>nd <ESC>:action GotoDeclaration<CR>
+nnoremap <leader>ni <ESC>:action GotoImplementation<CR>
+nnoremap <leader>nf <ESC>:action GotoFile<CR>
+nnoremap <leader>nc <ESC>:action GotoClass<CR>
+nnoremap <leader>ns <ESC>:action GotoSymbol<CR>
+nnoremap <leader>nt <ESC>:action GotoTest<cr>
+
+nnoremap <leader>/ <ESC>:action FindInPath<CR>
+
+nnoremap <leader>= <ESC>:action ReformatCode<CR>
+
+nnoremap [[ <ESC>:action MethodUp<CR>
+nnoremap ]] <ESC>:action MethodDown<CR>
+
+" Refactoring
+"============
+nnoremap <leader>rr <ESC>:action RenameElement<CR>
+nnoremap <leader>rm <ESC>:action Refactorings.QuickListPopupAction<CR>
+nnoremap cS <ESC>:action ChangeSignature<CR>
+nnoremap cts <ESC>:action ChangeTypeSignature<CR>
+
+nnoremap <leader>ec <ESC>:action ExtractClass<CR>
+nnoremap <leader>ef <ESC>:action ExtractFunction<CR>
+nnoremap <leader>ei <ESC>:action ExtractInterface<CR>
+vnoremap <leader>em <ESC>:action ExtractMethod<CR>
+nnoremap <leader>eM <ESC>:action ExtractModule<CR>
+nnoremap <leader>es <ESC>:action ExtractSuperclass<CR>
+vnoremap <leader>eC <ESC>:action IntroduceConstant<CR>
+nnoremap <leader>ev <ESC>:action IntroduceVariable<CR>
+
+" Run
+=====
+nnoremap <leader>rs <ESC>:action ChooseRunConfiguration<CR>
+nnoremap <leader>ru <ESC>:action Rerun<CR>
+
+" Errors
+"=======
+nnoremap <leader>ed <ESC>:action ShowErrorDescription<CR>
+nnoremap <leader>en <ESC>:action GotoNextError<CR>
+nnoremap <leader>ep <ESC>:action GotoPreviousError<CR>
+
+" VCS
+"=====
+nnoremap <leader>vl <ESC>:action Vcs.QuickListPopupAction<CR>
+nnoremap <leader>vn <ESC>:action VcsShowPrevChangeMarker<CR>
+nnoremap <leader>vp <ESC>:action VcsShowNextChangeMarker<CR>
+
+" Other
+"======
+nnoremap J <ESC>:action EditorJoinLines<CR>
+nnoremap K <ESC>:action QuickJavaDoc<CR>
+nnoremap <leader>q :wq<CR>
+nnoremap <leader>re <ESC>:action RecentFiles<CR>
+nnoremap \r <ESC>:source ~/.ideavimrc<CR>
+nnoremap <leader>sa <ESC>ggVG
