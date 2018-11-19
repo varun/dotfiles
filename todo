@@ -1,3 +1,55 @@
 https://gumroad.com/l/flask
 https://realpython.com/products/python-tricks-book/
 http://blog.florian-hopf.de/2018/02/service-testing-docker-containers.html
+
+Editor:
+
+- VIM bindings
+- Seach and replace
+- Go to Definition
+- Go to Declaration
+- Parameter info
+- Docs
+- Goto file
+- Goto class
+- Context aware Snippets
+- Git
+    - Commit
+    - Status
+    - Checkout branch
+    - Git add and remove
+    - Git log
+    - Git push
+    - Git resolve Conflicts
+    - Git pull
+    - Git fetch
+    - Git diff
+
+- Test
+    - Test current file
+  
+- Alternative File
+    - Goto Test file
+    - Goto implementation class/file
+- Errors
+    - list
+    - next
+    - previous
+- Compile
+- Run
+- Rerun
+- Generate 
+    - methods
+    - variables
+    - class
+- Refactor
+    - rename
+- Extract
+    - variables
+    - methods
+    - classes
+- FileStructure
+- Show usages
+- Find in path
+- Recent files
+- Navigate between edit places
