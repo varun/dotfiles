@@ -19,6 +19,13 @@ https://github.com/lyft/react-javascript-to-typescript-transform
 
 Editor:
 
+- coc nvim
+- ultisnips
+- far
+- vim-test
+- fugitive
+- tab settings based on file types
+
 - VIM bindings
 - Seach and replace
 - Go to Definition
